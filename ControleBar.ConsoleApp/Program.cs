@@ -51,7 +51,7 @@ namespace ControleBar.ConsoleApp
                         telaCadastroConta.FecharConta();
 
                     if (opcaoSelecionada == "4")
-                        telaCadastroConta.VisualizarRegistros("Tela");
+                        telaCadastroConta.FecharConta();
                 }
             }
         }

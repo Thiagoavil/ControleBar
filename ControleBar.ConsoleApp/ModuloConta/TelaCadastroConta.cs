@@ -108,8 +108,16 @@ namespace ControleBar.ConsoleApp.ModuloCliente
 
         public void ContasEmAberto()
         {
-            List<Conta> contas = new List<Conta>();
+            List<Conta> contasEmAberto = new List<Conta>();
+            List<Conta> contas = _repositorioConta.SelecionarTodos();
 
+            foreach(Conta conta in contas)
+            {
+                if(conta.aberta)
+                {
+                 contasEmAberto.Add(conta);
+                }
+            }
 
         }
 
